@@ -35,7 +35,7 @@ function App() {
         <pointLight position={[0, -10, 0]} intensity={1.5} />
 
         <group>
-          <mesh>
+          <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -3, 0]}>
             <planeBufferGeometry attach='geometry' args={[100, 100]} />
             {/* {This will need to cast a shadow} */}
             <meshStandardMaterial attach='material' color={'yellow'} />
